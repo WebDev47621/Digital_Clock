@@ -14,7 +14,7 @@ const setTime = () => {
     setTimeout(() => { colon.style.visibility = 'hidden' }, 500);
 
     hours.innerHTML = currentHours % 12;
-    minutes.innerHTML = currentMinutes;
+    minutes.innerHTML = currentMinutes < 10 ? `0${currentMinutes}` : currentMinutes;
     seconds.innerHTML = currentSeconds;
 
     console.log(currentHours % 12);
