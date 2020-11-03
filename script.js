@@ -17,10 +17,6 @@ const setTime = () => {
     minutes.innerHTML = currentMinutes < 10 ? `0${currentMinutes}` : currentMinutes;
     seconds.innerHTML = currentSeconds;
 
-    console.log(currentHours % 12);
-    console.log(currentMinutes);
-    console.log(currentSeconds);
-
     amPm.innerHTML = currentHours >= 12 ? 'PM' : 'AM';
 }
 
