@@ -9,6 +9,9 @@ const setTime = () => {
     const currentHours = currentTime.getHours();
     const currentMinutes = currentTime.getMinutes();
     const currentSeconds = currentTime.getSeconds();
+    colon.style.visibility = 'visible';
+
+    setTimeout(() => { colon.style.visibility = 'hidden' }, 500);
 
     hours.innerHTML = currentHours % 12;
     minutes.innerHTML = currentMinutes;
@@ -18,7 +21,7 @@ const setTime = () => {
     console.log(currentMinutes);
     console.log(currentSeconds);
 
-    amPm.innerHTML = hours >= 12 ? 'PM' : 'AM';
+    amPm.innerHTML = currentHours >= 12 ? 'PM' : 'AM';
 }
 
 setInterval(setTime, 1000);

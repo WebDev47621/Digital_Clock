@@ -22,19 +22,19 @@
 .hour-min-box {
     background-color: black;
     color: white;
-    font-size: 7rem;
+    font-size: 20vw;
     flex-direction: row;
 }
 
 .seconds-box {
     background-color: yellow;
-    font-size: 12rem;
+    font-size: 35vw;
     flex-direction: column;
     position: relative;
 }
 
 .seconds-box #am-pm {
-    font-size: 2rem;
+    font-size: 5vw;
     position: absolute;
     top: 20px;
     right: 25px;
